@@ -1,0 +1,56 @@
+﻿@model List<SYSWEB.Entities.FacturasEnt>
+
+@{
+    ViewData["Title"] = "ConsultarUsuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Información de la Factura # @Model.FirstOrDefault().IdFactura</h4>
+
+            <br>
+
+            <table id="showData" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Impuesto Unitario</th>
+                        <th>SubTotal</th>
+                        <th>Impuesto Total</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr style="text-align:center">
+                            <td>@item.Nombre</td>
+                            <td>@item.Cantidad</td>
+                            <td>@item.Precio.ToString("N2")</td>
+                            <td>@item.Impuesto.ToString("N2")</td>
+                            <td>@item.SubTotal.ToString("N2")</td>
+                            <td>@item.ImpuestoTotal.ToString("N2")</td>
+                            <td>@item.Total.ToString("N2")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#showData').dataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            }
+        });
+    });
+</script>

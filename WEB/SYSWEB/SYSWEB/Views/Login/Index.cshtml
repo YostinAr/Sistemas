@@ -1,0 +1,122 @@
+﻿@model List<SYSWEB.Entities.ProductoEnt>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<style>
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 calc(25% - 30px);
+        max-width: 220px;
+    }
+
+        .card h5 {
+            font-size: 1.2em;
+            margin: 8px 0;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+            margin: 4px 0;
+        }
+</style>
+<link href="~/css/articulos.css" rel="stylesheet" />
+<div class="cards-container">
+@if (Model.Count() > 0)
+{
+
+    foreach (var item in Model)
+    {
+        <div class="col-3">
+            <div class="card text-center">
+                <div class="card-body">
+
+                    <img src="@item.Imagen" width="150" height="150" />
+                    <br /><br />
+
+                    <h5 class="card-title">@item.Nombre</h5>
+                    <p class="card-text">@item.Descripcion</p>
+                    <p class="card-text">Unidades: @item.Cantidad &nbsp;&nbsp; ¢@item.Precio.ToString("N2")</p>
+
+                    @if (Context.Session.GetString("NombreUsuario") != null)
+                    {
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-6">
+                                <input type="number" class="form-control" id=cnt-@item.IdProducto>
+                            </div>
+                            <div class="col-3">
+                                <a onclick="AgregarCarrito(@item.IdProducto, @item.Cantidad)" class="btn btn-primary"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="col-12" style="text-align:center; margin-top:5%; font-size:16pt">
+        No hay productos disponibles en este momento
+    </div>
+}
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+
+    function AgregarCarrito(IdProducto, Disponibles)
+    {
+        let cantidadComprar = $("#cnt-" + IdProducto).val();
+
+        if (cantidadComprar > Disponibles) { 
+            
+            Swal.fire({
+                type: 'error',
+                title: 'Información',
+                text: 'La cantidad ingresada supera las unidades disponibles'
+            })
+
+        }
+        else
+        {
+            $.ajax({
+                type: "POST",
+                url: "/Carrito/RegistrarCarrito",
+                dataType: "json",
+                data: {
+                    "IdProducto": IdProducto,
+                    "cantidadComprar": cantidadComprar
+                },
+                success: function (result) {
+                   window.location.href = '@Url.Action("Index","Login")'
+                }
+            });
+        }
+    }
+
+</script>

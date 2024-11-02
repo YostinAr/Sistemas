@@ -1,0 +1,79 @@
+﻿@model List<SYSWEB.Entities.CarritoEnt>
+
+@{
+    ViewData["Title"] = "ConsultarUsuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Información del Carrito</h4>
+
+            <br/>
+            @ViewBag.MensajePantalla
+            <br /><br />
+
+            <table id="showData" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+
+                        <th>SubTotal</th>
+                        <th>Impuestos</th>
+                        <th>Total</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nombre</td>
+
+                            <td>@item.Cantidad</td>
+                            <td>@item.Precio.ToString("N2")</td>
+                            <td>@item.SubTotal.ToString("N2")</td>
+                            <td>@item.Impuesto.ToString("N2")</td>
+                            <td>@item.Total.ToString("N2")</td>
+                            <td style="text-align:center"><a href="@Url.Action("EliminarProductoCarrito","Carrito", new { q = item.IdCarrito })"><i class="fa fa-remove fa-lg"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @if (Context.Session.GetString("Total") != "0")
+            {
+
+                <div class="row" style="margin-top:2%">
+                    <div class="col-3">
+                        <p style="text-align:center; font-weight:bold; font-size:12pt; line-height:40px"> El total a pagar es de: @decimal.Parse(Context.Session.GetString("Total")).ToString("N2").ToString() </p>
+                    </div>
+
+                    <div class="col-3">
+                        @using (Html.BeginForm("PagarCarrito", "Carrito", FormMethod.Post))
+                        {
+                            <input type="submit" class="btn btn-primary" value="Pagar">
+                        }
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#showData').dataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            }
+        });
+    });
+</script>

@@ -1,0 +1,70 @@
+﻿@model List<SYSWEB.Entities.ProductoEnt>
+
+@{
+    ViewData["Title"] = "ConsultarUsuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Información de Productos</h4>
+
+            <div style="text-align:right">
+                <a class="btn btn-primary" href="@Url.Action("RegistrarProducto","Producto")">Agregar</a>
+            </div>
+            <br>
+
+            <table id="showData" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                        <th>Imagen</th>
+                        <th>Cambiar Estado</th>
+                        <th>Actualizar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nombre</td>
+                            <td>@item.Descripcion</td>
+                            <td>@item.Cantidad</td>
+                            <td>@item.Precio</td>
+
+                            @if (@item.Estado)
+                            {
+                                <td>Activo</td>
+                            }
+                            else
+                            {
+                                <td>Inactivo</td>
+                            }
+                            <td style="text-align:center"><img src=@item.Imagen style="width:150px; height:150px; border-radius:0px"></td>
+
+                            <td style="text-align:center"><a href="@Url.Action("ActualizarEstadoProducto","Producto", new { q = item.IdProducto })"><i class="fa fa-exchange fa-lg"></i></a></td>
+                            <td style="text-align:center"><a href="@Url.Action("ActualizarProducto","Producto", new { q = item.IdProducto })"><i class="fa fa-tag fa-lg"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#showData').dataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            }
+        });
+    });
+</script>

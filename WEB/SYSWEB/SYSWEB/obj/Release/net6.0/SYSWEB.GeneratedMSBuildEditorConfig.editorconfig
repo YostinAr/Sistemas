@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SYSWEB
+build_property.RootNamespace = SYSWEB
+build_property.ProjectDir = D:\Trabajos\Clientes\Nancy\Sistemas\WEB\SYSWEB\SYSWEB\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Trabajos\Clientes\Nancy\Sistemas\WEB\SYSWEB\SYSWEB
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Carrito/ConsultarCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDb25zdWx0YXJDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Carrito/ConsultarDetalleFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDb25zdWx0YXJEZXRhbGxlRmFjdHVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Carrito/ConsultarFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDb25zdWx0YXJGYWN0dXJhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/CambiarClaveCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2FtYmlhckNsYXZlQ3VlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/IniciarSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5pY2lhclNlc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5pY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/RecuperarCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVjdXBlcmFyQ3VlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Login/RegistrarCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cmFyQ3VlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Producto/ActualizarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQWN0dWFsaXphclByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Producto/ConsultarProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ29uc3VsdGFyUHJvZHVjdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Producto/RegistrarProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUmVnaXN0cmFyUHJvZHVjdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Usuario/ActualizarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBY3R1YWxpemFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Usuario/CambiarClave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYW1iaWFyQ2xhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Usuario/ConsultarUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDb25zdWx0YXJVc3Vhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Usuario/PerfilUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQZXJmaWxVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Ventas/Ventas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXFZlbnRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tz0r1dtjtq
+
+[D:/Trabajos/Clientes/Nancy/Sistemas/WEB/SYSWEB/SYSWEB/Views/Shared/_Layout_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0zicgdc1o4
